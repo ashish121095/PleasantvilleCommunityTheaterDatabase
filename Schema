@@ -1,0 +1,56 @@
+Pleasantville Community Theater Relational Schema
+
+------------------------------------------------------Level 1----------------------------------------------------
+Address (addID, street, city, zip)
+
+Play (title, author, numberOfActs, setChanges)
+
+------------------------------------------------------Level 2----------------------------------------------------
+
+Member (MemID, addID, duesYear, dateJoined, f_name, l_name, phone_areaCode, phone_number, currentOfficeHeld)
+
+Sponsor (sponID, addID, name, phone_areaCode, phone_number)
+
+Subscriber (subID, addID, seasonStartDate, f_name, l_name, phone_areaCode, phone_number)
+
+Production (prodID, title, prod_year, prod_seasonStartDate, seasonEndDate)
+
+
+------------------------------------------------------Level 3----------------------------------------------------
+
+Performance (perfID,  prodID, date, time),
+
+DuesPayment (MemID, duesYear, amount, datePaid)
+
+------------------------------------------------------Level 4----------------------------------------------------
+
+TicketSale (saleID, perfID, subID, saleDate, totalAmount)
+
+Donation (donationDate, sponID, prodID, donationType, donationValue)
+
+------------------------------------------------------Level 5----------------------------------------------------
+
+Ticket (seatLocation, saleID, price, type)
+
+
+
+
+List of Assumptions:
+
+•	A city is big enough it may contain multiple zip codes.
+•	All seats in a section are the same price (i.e. all balcony seats are the same price)
+•	City name is not unique (i.e. Springfield Ohio vs Springfield Missouri)
+•	Member names are not unique (i.e. could be 2 joe smiths)
+•	A play set changes does not have to be the same number of acts. Each act could contain multiple sets.
+•	Sponsor name is either a company or a person, because it can be either it is stored as 1 field
+•	Area code of phone number doesn’t have to be same for particular area (i.e. person can get sim from some other area)
+
+Explanatory Notes:
+
+•	We have created a new address table which helps to normalize our relational schema. We created addID named primary key and used it as a foreign key in every table wherever address was an attribute.
+
+•	The one-to-many relationship between two tables represented as foreign key on many side table and primary key on one side of the table
+
+•	Used foreign key on either side of table wherever one to one relationship exists. 
+
+•	The addID relationship is also one to many, which is in member, sponser, and subscriber table as foreign key. 
