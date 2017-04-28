@@ -1,1 +1,30 @@
 # PleasantvilleCommunityTheaterDatabase
+
+Introduction to Student Project Two:
+Read about the project described here, and also read the sample project for this chapter. Use it as a model in carrying out the steps for your project. If you can do so, interview people who are familiar with the environment described in your project. Based on your interviews, the written description, and your own analysis of the project, do the following four steps. Remember that you should not make any assumptions about the internal structure of the database at this point. Your reports and forms should be based on user’s needs, not on what you think the eventual structure of the database might be. Do not create a database at this point. These steps can be done by hand or using a word processor or similar tool.
+
+Step 1.1. Write out the format of every input document that provides information to be stored in the database. 
+Step 1.2 Write out the format of every routine report to be produced using the database. 
+Step 1.3 Describe or sketch the input and output screens for every routine transaction to be performed against the database. 
+Step 1.4 Write out an initial list of assumptions for the project.
+Project Two: Pleasantville Community Theater Group
+•	General Description
+The Pleasantville Community Theater Group is a nonprofit organization of about 200 members, amateurs who enjoy producing and performing in plays. Members pay dues of $50 per year. The group produces two plays each year, and the members work on the productions. Not all members are active workers every year. 
+
+•	Basic Operations
+The group produces plays in the fall and in the spring. Some members of the group have roles in the plays, while others work on scenery, costumes, publicity, programs, and other tasks. The group has two general meetings per year. Each fall they meet to elect officers - a president, vice president, secretary, treasurer, and house manager, who serve for the entire year. At the end of the spring season, the group meets again to evaluate the previous year’s activities and to select the two plays and their producers for the following year.  The producer of each play is then responsible for managing all aspects of that production, including recruiting volunteers, promotion, casting, etc. The group sometimes obtains sponsorship from local businesses for a production, and always prints a program with advertisements that help defray some of the production costs. The program also lists the cast, crew and credits for the show. The production work is generally done by the members, but skilled craftsmen are contracted as needed for specific tasks, such as electrical wiring. No professional actors are used. For a theater, the group uses the local high school auditorium, which has about 1000 seats.
+
+•	Information Needs
+The group wishes to have a database to keep track of members and productions. They also need to compile names and addresses of potential playgoers (patrons) so they can mail announcements to them for each production, to help sell tickets. In the past open seating has been used, but they would now like to use assigned seats, since the auditorium seats have identifying row letters and seat numbers. There are 26 rows (A-Z) with 40 seats per row. This would allow them to have subscriptions with assigned seating. The database should keep track of plays that are suitable for production by such a company. They also need to compile information about potential or past corporate sponsors. 
+Some of the forms or reports that would be helpful follow.
+Play Listing Plays that could be produced by the company are identified by the title, author, type (drama, comedy, musical, etc.), and number of acts. 
+Program - Cast and Credits The program for each production should list the names of members along with the role each played and the jobs each had for the production.  
+Program – Sponsors The program should list all the corporations and individuals who donated money, goods, or services for each production.
+Report of Patrons This internal report lists mailing information for patrons, as well as a list of the productions they bought tickets for in the past
+Ticket Sales Report This internal report should list the tickets, along with price and seat numbers, that patrons have ordered for productions. 
+Admission Ticket The database should be able to print tickets when a patron orders them. The ticket should list the name of the play, the date, time, price, and the seat.
+Member Dues Payment Report The treasurer needs a report that shows which members have paid dues and which members still owe them. Contact information for those who have not yet paid dues should be provided.
+Balance Sheet The treasurer is responsible for maintaining all information about income and expenditures for the year. Income comes from dues, sponsors, ticket sales, and any other sources. Expenditures include any costs for the productions, such as contractor’s fees, equipment rental, auditorium rental fee, etc. At the end of the year the sheet may show at most a modest profit, but never a loss. Therefore, the treasurer must be able to report on the current financial condition at any time, so that expenditures can be evaluated before funds are spent.
+Ticket Sale Transaction The ticket sale process requires an interactive transaction. The user should be able to input a request for one or more seats for a particular performance, and the return screen should display sufficient information to allow the user to determine whether the seats are available. If so, the transaction should be completed by reserving the seats and printing the tickets. If not, it should be possible to find alternate seats, if they exist.
+In addition to the forms and reports listed here, there are several others that would be useful. Do steps 1.1 – 1.4 based on the information provided here and any additional applicable assumptions you need to make about the operations of the Pleasantville Community Theater Group.
+
